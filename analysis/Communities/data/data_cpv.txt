@@ -1,0 +1,14 @@
+#k 	 numero de ASes 	 numero de comunidades 	 tamanho max de uma comunidade
+3	9690	571	7717
+4	1931	98	1523
+5	432	23	311
+6	123	7	83
+7	42	2	35
+8	23	2	13
+9	0	0	0
+10	0	0	0
+11	0	0	0
+12	0	0	0
+13	0	0	0
+14	0	0	0
+

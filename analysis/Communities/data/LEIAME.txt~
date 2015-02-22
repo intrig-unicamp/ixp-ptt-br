@@ -1,0 +1,22 @@
+Descrição dos arquivos data_<PTT>
+---------------------------------
+Esses arquivos contém tamanho e quantidade de comunidades, como detalhado a seguir.
+
+k					valor de k 
+numero de ASes				soma do tamanho de todas as comunidades   (pode haver repetição de SAs)
+numero de comunidades			quantidade de comunidades
+tamanho max de uma comunidade		maior tamanho em SAs de uma comunidade
+
+
+Descrição dos arquivos densityAvgODF_<PTT>
+-------------------------------------------
+
+Esses arquivos contém desidade e ODF (out degree fraction).
+Para cada valor de k foi gerada a densidade de cada comunidade e valor médio do ODF.
+
+OBS: a média do Out Degree Fraction é calculada a partir dos nós de uma comunidade
+
+
+-------
+Os dados para k=3 foram separados em um subdiretório, pois com k=3 temos muitas comunidades
+

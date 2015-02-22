@@ -19,9 +19,6 @@ myPath="../PTT_PATH"
 pttPathCounter = len(glob.glob1(myPath,"Ptt_Path*"))
 #Armazena em Array o nome dos arquivos de Path
 files=glob.glob1(myPath,"Ptt_Path*")
-#Variaveis para armazenamento dos nos
-A=nx.Graph()
-B=nx.Graph()
 
 o=0;
 exists=False;

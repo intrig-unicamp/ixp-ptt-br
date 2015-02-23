@@ -27,7 +27,7 @@ for file in range(0,pttPathCounter):
     #Variavel de armazenamento de cada arquivo de Path
     name = files[file]
     print name
-    #Variavel de armazenamento dos identificadores dos Ptts (Ex: Ptt_Path_SP - Recupera apenas o id$
+    #Variavel de armazenamento dos identificadores dos Ptts (Ex: Ptt_Path_SP - Recupera apenas o id
     filename=''.join(e for e in name[12:15] if e.isalnum())
 
     if (filename=="AME"):
@@ -161,7 +161,6 @@ for file in range(0,pttPathCounter):
         edgecolor='blue'
         hatch="xxx"
 
-    #Leitura atual de arquivo
     f2 = open(myPath+'degree_plot_'+filename+'.dat', 'r')
     newlines = f2.readlines()
     f2.close()
@@ -169,6 +168,7 @@ for file in range(0,pttPathCounter):
     # initialize some variable to be lists:
     x1 = []
     y1 = []
+
     # scan the rows of the file stored in lines, and put the values into some variables:
     for newline in newlines:
         p = newline.split()
@@ -178,19 +178,14 @@ for file in range(0,pttPathCounter):
     xv = np.array(x1)
     yv = np.array(y1)
 
-    #plt.plot(xv, yv)
     plt.bar(xv, yv, linewidth=1.3, color=color, ecolor=ecolor, edgecolor=edgecolor, hatch=hatch, align='center')
-    #plt.bar(x, y, linewidth=1.3, color='#CCCCCC', ecolor='#000000', align='center')
     plt.xticks(xv)
     plt.title("PTT - "+filename)
     plt.xlabel("Number of Neighbors", fontsize=18)
     plt.ylabel("(%) SAs", fontsize=18)
     plt.tick_params(axis='both', which='major', labelsize=14)
-    #plt.margins(0.00)
     plt.ylim([0,80])
     plt.margins(0.02, 0.0)
-    # now, plot the data:
     print "Processing PTT "+filename+"..."
     plt.savefig("../graphics_AS_degree/Graphic_"+filename+".eps")
     plt.clf()
-#    plt.show()

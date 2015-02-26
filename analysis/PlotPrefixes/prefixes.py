@@ -3,7 +3,7 @@
 ################################################################################
 # Libraries import
 import sys
-sys.path.append('../GnuPlotLibrary')
+sys.path.append('../MatPlotLibIntrig')
 from gnuplot import *
 import glob
 ################################################################################

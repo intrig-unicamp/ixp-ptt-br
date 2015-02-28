@@ -14,3 +14,8 @@ The raw dataset (as described on the [workflow](https://github.com/intrig-unicam
 
 ### Workflow 
 This is the [workflow](https://github.com/intrig-unicamp/ixp-ptt-br/raw/master/figures/workflow/workflow_PttProject.jpg) used in this project.
+
+### License
+
+Creative Commons License
+This work and all other materials under [https://github.com/intrig-unicamp/](https://github.com/intrig-unicamp/) are licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). 

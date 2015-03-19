@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import zipfile, cStringIO
 import networkx as nx
 import matplotlib.pyplot as plt
 import math
@@ -9,10 +8,15 @@ import glob
 from networkx import *
 from operator import itemgetter, attrgetter, methodcaller
 
+#Read this file
 file_name="report_graph_members.txt"
+#At current path
 myPath="."
+#Save the file
 files=glob.glob1(myPath,file_name)
+#output file name
 outputfile="members_sorted.txt"
+#remove the output file if it exists
 os.system('rm '+ outputfile)
 
 o=0;
@@ -22,28 +26,27 @@ node = [[0 for x in xrange(2)] for x in xrange(1000)]
 e1=open(file_name, 'r')
 print "Processing File..."+file_name
 
-#Declaracao de variaveis
 i=0;j=0;
 
-#Laco para leitura dos arquivos de Path
+#Read Path files
 for line in e1:
     j+=1
-    #Laco para leitura das colunas
+    #Read the columns
     while i <= 1:
-        #Se primeira coluna
+        #If first column
         if (i==0):
-            #Armazena o AS ID
+            #Save the ASN ID
             node[o][0]=str(line.strip().split(' ')[0])
-        #Se segunda coluna
+        #If second column
         elif(i==1):
             node[o][1]=str(line.strip().split(' ')[1])
             #os.system('echo '+str(node[o][0])+" "+str(node[o][1])+'  >> '+file_name)
             o+=1
-        #Incrementa a leitura para uma nova coluna
+        #Go to next column
         i+=1
-    #Inicia uma nova linha na coluna 0
+    #Go to column 0
     i=0
-
+#---------------------------------------------------------------------
 member=""
 members=["0"]
 ptt=""
@@ -54,8 +57,8 @@ for line in range(0,j):
         if(str(node[line_][1])==member and member not in members):
             members.append(member)
 
+#remove member 0
 members.pop(0)
-#print sorted(members)
 #----------------------------------------------------------------------
 membersptt=[]
 membersorted=[]
@@ -68,8 +71,7 @@ for line in range(0,len(members)):
 
 membersorted = sorted(membersptt)
 
+#Save the list of sorted members
 for line in range(0,len(membersorted)):
     os.system('echo ASN:'+membersorted[line]+'  >> '+"members_sorted.txt")
 os.system('echo TOTAL ASNs:'+str(j)+' >> '+outputfile)
-
-    #print membersorted[line]

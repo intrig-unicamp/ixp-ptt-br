@@ -46,10 +46,10 @@ for line in e1:
 
 member=""
 members=["0"]
+xx=0
 ptt=""
 for line in range(0,j):
     member=str(node[line][1])
-
     for line_ in range(line+1,j):
         if(str(node[line_][1])==member and member not in members):
             members.append(member)
@@ -59,10 +59,15 @@ members.pop(0)
 #----------------------------------------------------------------------
 membersptt=[]
 membersorted=[]
+graphic_dataset=[0,759,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+count_graphic=0
 for line in range(0,len(members)):
     for line_ in range(0,j):
         if(members[line]==node[line_][1]):
-           ptt=ptt+" "+node[line_][0]
+            ptt=ptt+" "+node[line_][0]
+            count_graphic=count_graphic+1
+    graphic_dataset[count_graphic]=graphic_dataset[count_graphic]+1
+    count_graphic=0
     membersptt.append(str(members[line])+":"+str(ptt))
     ptt=""
 
@@ -72,4 +77,7 @@ for line in range(0,len(membersorted)):
     os.system('echo ASN:'+membersorted[line]+'  >> '+outputfile)
 os.system('echo TOTAL ASNs:'+str(len(membersorted))+' >> '+outputfile)
 
-    #print membersorted[line]
+output_graphic_dataset="graphic_dataset.txt"
+os.system('rm '+ output_graphic_dataset)
+for line in range(1,len(graphic_dataset)):
+    os.system('echo '+str(line)+' '+str(graphic_dataset[line])+'  >> '+output_graphic_dataset)

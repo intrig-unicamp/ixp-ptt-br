@@ -1,0 +1,14 @@
+#k	numero de ASes (com repeticao)	 numero de comunidades		tamanho max de uma comunidade
+4	581	1	581
+5	550	2	545
+6	508	2	502
+7	480	2	472
+8	451	1	451
+9	428	1	428
+10	395	2	383
+11	311	2	300
+12	239	3	215
+13	179	4	139
+14	89	1	89
+15	58	1	58
+16	62	2	36

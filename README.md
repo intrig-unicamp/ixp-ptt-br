@@ -9,6 +9,8 @@ The raw dataset (as described on the [workflow](https://github.com/intrig-unicam
 
 /figures - figures and graphics of research results based on the analysis made
 
+/raw_data - script to collect raw data from Brazilian IXPs
+
 /spreadsheets - some research results with IXPs and their members characterization
 
 

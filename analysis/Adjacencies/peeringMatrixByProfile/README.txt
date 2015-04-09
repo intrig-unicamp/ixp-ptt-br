@@ -7,3 +7,5 @@ Steps to generate peering matrix by profile:
 5) generatePlt.sh: generates the gnuplot file
 
 The script runPeeringMatrix.sh can be used to run all of the above programs in a sequence
+
+TODO: the following files could be easily merged in just one: order.txt and profile_separator.txt

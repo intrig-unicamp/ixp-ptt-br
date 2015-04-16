@@ -8,6 +8,8 @@ fi
 
 read -p "Confirm that you have profile_separator, data and order folders and press [Enter] key ..."
 
+state=$1
+
 if [ ! -f data/ptt_$state.txt ]; then
   echo Data file not found!
   echo Expected: data/ptt_$state.txt

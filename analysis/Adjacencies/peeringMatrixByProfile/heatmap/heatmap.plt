@@ -28,7 +28,7 @@ set ytics add ("4.1" 7)
 set ytics add ("4.2" 8)
 set ytics add ("4.3" 9)
 
-set cbrange [0:5]
+set cbrange [0:2]
 set cblabel "Score"
 set view map
-splot 'data' matrix with image
+splot 'normalized_data' matrix with image

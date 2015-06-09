@@ -1,0 +1,9 @@
+Package: bgp.rib.tools
+Type: Package
+Title: What the package does (short line)
+Version: 1.0
+Date: 2015-02-21
+Author: Hirley Dayan
+Maintainer: Hirley Dayan <bgp.rib.tools@hirleydayan.com>
+Description: More about what it does (maybe more than one line)
+License: What license is it under?

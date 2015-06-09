@@ -1,9 +1,9 @@
 Package: bgp.rib.tools
 Type: Package
-Title: What the package does (short line)
+Title: Processes BGP tables
 Version: 1.0
-Date: 2015-02-21
+Date: 2015-05-01
 Author: Hirley Dayan
-Maintainer: Hirley Dayan <bgp.rib.tools@hirleydayan.com>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Maintainer: Hirley Dayan <hirley@dca.fee.unicamp.br>
+Description: Processes BGP tables
+License:

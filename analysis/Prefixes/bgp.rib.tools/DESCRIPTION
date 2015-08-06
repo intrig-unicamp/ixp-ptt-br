@@ -1,0 +1,9 @@
+Package: bgp.rib.tools
+Type: Package
+Title: Processes BGP tables
+Version: 1.0
+Date: 2015-05-01
+Author: Hirley Dayan
+Maintainer: Hirley Dayan <hirley@dca.fee.unicamp.br>
+Description: Processes BGP tables
+License:

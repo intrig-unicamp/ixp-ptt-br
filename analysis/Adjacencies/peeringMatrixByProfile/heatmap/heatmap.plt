@@ -1,34 +1,40 @@
-set palette rgbformulae -7,2,-7
+#set palette rgbformulae -7,2,-7
+set palette defined (0 "green", 0.5 "yellow", 1 "red")
 set datafile separator ","
 
-set cblabel "Score" font ",20"
+set cblabel "Peering Affinity" font ",22"
 set terminal postscript eps enhanced color font "Helvetica,20"
 set tics font ",17"
 set output "heatmap.eps"
 
-set xtics ("1.1" 0)
-set xtics add ("1.2" 1)
-set xtics add ("2.1" 2)
-set xtics add ("2.2" 3)
-set xtics add ("3.1" 4)
-set xtics add ("3.2" 5)
-set xtics add ("3.3" 6)
-set xtics add ("4.1" 7)
-set xtics add ("4.2" 8)
-set xtics add ("4.3" 9)
+set xrange [-0.5:9.5]
+set yrange [-0.5:9.5]
 
-set ytics ("1.1" 0)
-set ytics add ("1.2" 1)
-set ytics add ("2.1" 2)
-set ytics add ("2.2" 3)
-set ytics add ("3.1" 4)
-set ytics add ("3.2" 5)
-set ytics add ("3.3" 6)
-set ytics add ("4.1" 7)
-set ytics add ("4.2" 8)
-set ytics add ("4.3" 9)
+set xtics ("1.1" 0.5)
+set xtics add ("1.2" 1.5)
+set xtics add ("2.1" 2.5)
+set xtics add ("2.2" 3.5)
+set xtics add ("3.1" 4.5)
+set xtics add ("3.2" 5.5)
+set xtics add ("3.3" 6.5)
+set xtics add ("4.1" 7.5)
+set xtics add ("4.2" 8.5)
+set xtics add ("4.3" 9.5)
 
-set cbrange [0:2]
-set cblabel "Score"
+set ytics ("1.1" 0.5)
+set ytics add ("1.2" 1.5)
+set ytics add ("2.1" 2.5)
+set ytics add ("2.2" 3.5)
+set ytics add ("3.1" 4.5)
+set ytics add ("3.2" 5.5)
+set ytics add ("3.3" 6.5)
+set ytics add ("4.1" 7.5)
+set ytics add ("4.2" 8.5)
+set ytics add ("4.3" 9.5)
+
+set cbrange [0:1]
+set cblabel "Peering Affinity"
 set view map
 splot 'normalized_data' matrix with image
+#splot 'heatmap_produto_data' matrix with image
+#splot 'heatmap_soma_data' matrix with image

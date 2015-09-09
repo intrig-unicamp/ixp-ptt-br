@@ -24,11 +24,11 @@ for file in range(0,pttPathCounter):
     e1=open('Ptt_Path_'+filename+'.txt', 'r')
     #Leitura atual de arquivo
     print "Processing PTT "+filename+"..."
-    f=open('degree_plot_'+filename+'.dat', 'w')
+    f=open('degree_per_AS_'+filename+'.txt', 'w')
     A=nx.Graph()
 
     i=0;ii=[];k=1;j=0;d=[]
-    node = [[0 for x in xrange(50)] for x in xrange(4000000)]
+    node = [[0 for x in xrange(50)] for x in xrange(2000000)]
 
     for line in e1:
         count=len(line.strip().split(' '))
@@ -44,7 +44,7 @@ for file in range(0,pttPathCounter):
         k=1
         j+=1
 
-for i in A.nodes():
-    data = "{} {}\n".format(i,A.degree(i))
-    f.write(data)
-f.close()
+    for i in sorted(A.nodes()):
+        data = "{} {}\n".format(i,A.degree(i))
+        f.write(data)
+    f.close()

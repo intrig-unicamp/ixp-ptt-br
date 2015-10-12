@@ -1,0 +1,53 @@
+Start
+	BA
+	BEL
+	CAS
+	CE
+	CPV
+	CXJ
+	DF
+	GYN
+	LAJ
+	LDA
+	MAO
+	MG
+	MGF
+	NAT
+	PE
+	PR
+	RJ
+	RS
+	SC
+	SCA
+	SJC
+	SJP
+	SP
+	VIX
+	BA
+	BEL
+	CAS
+	CE
+	CPV
+	CXJ
+	DF
+	GYN
+	LAJ
+	LDA
+	MAO
+	MG
+	MGF
+	NAT
+	PE
+	PR
+	RJ
+	RS
+	SC
+	SCA
+	SJC
+	SJP
+	SP
+	VIX
+CSV file was created successfully !!!
+Execution time: 1442927466640ms
+End function: AS_PTT_Prepend [2015-09-22 10:11:06] 
+End

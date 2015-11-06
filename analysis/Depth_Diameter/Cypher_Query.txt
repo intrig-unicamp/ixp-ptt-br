@@ -1,6 +1,0 @@
-MATCH (a:AS {cPTT:'1'})
-WITH a
-OPTIONAL MATCH (a)-[r:`Path`]->(b)
-WITH a.NUMBER as StartAS,b.lstAS as Path, REDUCE(s=0, rel IN SPLIT(b.lstAS,",") | s+1) as Depth
-RETURN Depth,count(StartAS) as Total
-ORDER BY Depth

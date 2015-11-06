@@ -1,4 +1,0 @@
-MATCH p=(a:AS {cPTT:"1"})-[r:`Traverses`]->(b:AS {cPTT:"1"})
-WITH a.NUMBER as StartAS,b.NUMBER as EndAS,
-EXTRACT (n IN NODES(p) | n.NUMBER) as Path
-RETURN count(Path) as Total, replace(replace(replace(str(collect(Path)),"[\"","{"),"\"]","}"),"\",\"",",") AS ExistingPairs
